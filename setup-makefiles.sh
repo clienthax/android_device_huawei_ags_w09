@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=rolex
-VENDOR=xiaomi
+DEVICE=ags_w09
+VENDOR=huawei
 
 INITIAL_COPYRIGHT_YEAR=2018
 

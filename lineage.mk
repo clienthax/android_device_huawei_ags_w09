@@ -23,17 +23,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from rolex device
-$(call inherit-product, device/xiaomi/rolex/device.mk)
+$(call inherit-product, device/huawei/ags_w09/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := rolex
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi 4A
-PRODUCT_NAME := lineage_rolex
+PRODUCT_BRAND := Huawei
+PRODUCT_DEVICE := ags_w09
+PRODUCT_MANUFACTURER := Huawei
+PRODUCT_MODEL := ags_w09
+PRODUCT_NAME := lineage_ags_w09
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-ags-w09
 
-TARGET_VENDOR_PRODUCT_NAME := rolex
+TARGET_VENDOR_PRODUCT_NAME := ags_w09
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="rolex" \
