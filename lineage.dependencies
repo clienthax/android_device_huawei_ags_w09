@@ -4,8 +4,12 @@
    "target_path": "device/qcom/common"
  },
  {
-   "repository": "android_kernel_huawei_AGS-W09",
-   "target_path": "kernel/huawei/AGS-W09"
+   "repository": "clienthax/android_kernel_huawei_AGS-W09",
+   "target_path": "kernel/huawei/ags_w09"
+ },
+ {
+   "repository": "clienthax/qcom_opensource_wlan_prima",
+   "target_path": "kernel/huawei/ags_w09/vendor/qcom/opensource/wlan/prima"
  },
  {
    "repository": "android_packages_resources_devicesettings",
