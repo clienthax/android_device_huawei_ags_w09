@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from rolex device
+# Inherit from huawei device
 $(call inherit-product, device/huawei/ags_w09/device.mk)
 
 PRODUCT_BRAND := Huawei
@@ -36,9 +36,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-ags-w09
 TARGET_VENDOR_PRODUCT_NAME := ags_w09
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="rolex" \
-    PRODUCT_NAME="rolex" \
-    PRIVATE_BUILD_DESC="rolex-user 7.1.2 N2G47H V9.2.6.0.NCCMIEK release-keys"
+    TARGET_DEVICE="ags_w09" \
+    PRODUCT_NAME="ags_w09" \
+    PRIVATE_BUILD_DESC="ags_w09-user 7.1.2 N2G47H V9.2.6.0.NCCMIEK release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "Xiaomi/rolex/rolex:7.1.2/N2G47H/V9.2.6.0.NCCMIEK:user/release-keys"

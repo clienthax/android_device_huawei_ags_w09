@@ -25,4 +25,4 @@ DEVICE_PACKAGE_OVERLAYS += \
 include $(DEVICE_PATH)/product/*.mk
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/huawei/ags_w09/rolex-vendor.mk)
+$(call inherit-product-if-exists, vendor/huawei/ags_w09/ags_w09-vendor.mk)
