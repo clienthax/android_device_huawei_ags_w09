@@ -110,22 +110,8 @@ static void init_alarm_boot_properties()
 
 void check_device()
 {
-    std::ifstream fin;
-    std::string buf;
-
-    fin.open("/proc/cmdline");
-    while (std::getline(fin, buf, ' '))
-        if (buf.find("board_id") != std::string::npos)
-            break;
-    fin.close();
-
-    if (buf.find("S88503") != std::string::npos) {
-        model = "Redmi 4A";
-    } else {
-        model = "Redmi 5A";
-	property_set("ro.power_profile.override", "/vendor/etc/power_profile_riva.xml");
-    }
-
+    // This product targets only the Wi-Fi Huawei AGS-W09.
+    model = "AGS-W09";
 }
 
 
