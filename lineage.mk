@@ -28,17 +28,11 @@ $(call inherit-product, device/huawei/ags_w09/device.mk)
 PRODUCT_BRAND := Huawei
 PRODUCT_DEVICE := ags_w09
 PRODUCT_MANUFACTURER := Huawei
-PRODUCT_MODEL := ags_w09
+PRODUCT_MODEL := AGS-W09
 PRODUCT_NAME := lineage_ags_w09
 
-PRODUCT_GMS_CLIENTID_BASE := android-ags-w09
+PRODUCT_GMS_CLIENTID_BASE := android-huawei
 
 TARGET_VENDOR_PRODUCT_NAME := ags_w09
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="ags_w09" \
-    PRODUCT_NAME="ags_w09" \
-    PRIVATE_BUILD_DESC="ags_w09-user 7.1.2 N2G47H V9.2.6.0.NCCMIEK release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "Xiaomi/rolex/rolex:7.1.2/N2G47H/V9.2.6.0.NCCMIEK:user/release-keys"
+# Use the generated build identity instead of the donor Redmi fingerprint.
